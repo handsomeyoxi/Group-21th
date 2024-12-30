@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>商品頁範例</title>
+  <link rel="stylesheet" href="css/interface1.css">
+</head>
+<body>
+
+  <!-- Header: 導覽列 -->
+  <header class="header">
+    <div class="header-left">
+      <!-- 漢堡選單 -->
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Logo 區: 以圖片代替原本文字 -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/camera logo remove background.jpg" alt="RetroCam Logo" />
+        </a>
+      </div>
+    </div>
+  
+    <div class="header-right">
+      <!-- 購物車 icon (若需連至 cart.html) -->
+      <a href="cart.html" class="cart-link">
+        <img src="https://via.placeholder.com/24x24?text=Cart" alt="Cart">
+      </a>
+      <!-- 使用者 icon -->
+      <div class="user-icon">
+        <img src="https://via.placeholder.com/24x24?text=User" alt="User">
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- 搜尋框 (可放在header內或下方) -->
+  <section class="search-section">
+    <div class="search-bar">
+      <input type="text" placeholder="搜尋關鍵字" />
+      <button> 
+        <img src="https://via.placeholder.com/20x20?text=🔍" alt="Search">
+      </button>
+    </div>
+  </section>
+
+  <!-- 主內容：商品大圖 & 資訊 -->
+  <main>
+    <!-- 商品照片區 -->
+    <section class="product-photos">
+      <div class="product-photo">
+        <!-- 使用 .photo-placeholder 包裹實際圖片 -->
+        <div class="photo-placeholder">
+          <!-- 新增: 讓圖片符合容器大小 -->
+          <img src="image/綠墨鏡.png" alt="商品照片">
+        </div>
+      </div>
+      <!-- 照片切換 (示意 “< 1/4 >”) -->
+      <div class="photo-navigation">
+        <span class="prev">&lt;</span>
+        <span class="current">1/4</span>
+        <span class="next">&gt;</span>
+      </div>
+    </section>
+
+    <!-- 商品資訊 -->
+    <section class="product-info">
+      <h2>商品資訊</h2>
+      <!-- 按鈕群 -->
+      <div class="product-card" data-id="set2" data-name="綠墨鏡">
+        <button class="add-to-cart">加入購物車</button>
+        <a href="cart.html">
+        <button class="btn-buy">立即購買</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- 猜你也會喜歡 -->
+    <section class="recommend-section">
+      <h2>猜你也會喜歡</h2>
+      <div class="recommend-list">
+        <div class="recommend-item">
+          <img src="image/復古別針.png" alt="推薦商品1">
+        </div>
+        <div class="recommend-item">
+          <img src="image/老鷹大學T.png" alt="推薦商品2">
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- 頁尾 Footer -->
+  <footer class="footer">
+    <button class="contact-btn">聯絡資訊</button>
+  </footer>
+
+  <script src="dropdownList2.js"></script>
+
+</body>
+</html>
